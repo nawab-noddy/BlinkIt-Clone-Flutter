@@ -63,10 +63,14 @@ class Cartscreen extends StatelessWidget {
                   ],
                 ),
               ),
-              CircleAvatar(
-                radius: 15,
-                backgroundColor: Colors.white,
-                child: Icon(Icons.person, color: Colors.black, size: 15),
+              Positioned(
+                right: 30,
+                bottom: 80,
+                child: CircleAvatar(
+                  radius: 15,
+                  backgroundColor: Colors.white,
+                  child: Icon(Icons.person, color: Colors.black, size: 20),
+                ),
               ),
             ],
           ),
