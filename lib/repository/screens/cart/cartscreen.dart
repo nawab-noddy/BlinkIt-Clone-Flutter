@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:my_app/repository/widgets/uihelper.dart';
 
 class Cartscreen extends StatelessWidget {
-  const Cartscreen({super.key});
+  // const Cartscreen({super.key});
+  TextEditingController searchController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -13,15 +14,15 @@ class Cartscreen extends StatelessWidget {
           Stack(
             children: [
               Container(
-                height: 160,
+                height: 190,
                 width: double.infinity,
                 color: Color(0XFFF7CB45),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    SizedBox(height: 30),
                     Row(
                       children: [
-                        SizedBox(width: 10),
+                        SizedBox(width: 20),
                         UiHelper.Customtext(
                           text: "Blinkit in",
                           color: Color(0XFF000000),
@@ -31,7 +32,7 @@ class Cartscreen extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            SizedBox(width: 10),
+                            SizedBox(width: 20),
                             UiHelper.Customtext(
                               text: "16 minutes",
                               color: Color(0XFF000000),
@@ -45,7 +46,7 @@ class Cartscreen extends StatelessWidget {
                     ),
                     Row(
                       children: [
-                        SizedBox(width: 10),
+                        SizedBox(width: 20),
                         UiHelper.Customtext(
                           text: "Home ",
                           color: Color(0XFF000000),
@@ -64,13 +65,18 @@ class Cartscreen extends StatelessWidget {
                 ),
               ),
               Positioned(
-                right: 30,
-                bottom: 80,
+                right: 20,
+                bottom: 100,
                 child: CircleAvatar(
                   radius: 15,
                   backgroundColor: Colors.white,
                   child: Icon(Icons.person, color: Colors.black, size: 20),
                 ),
+              ),
+              Positioned(
+                bottom: 30,
+                left: 20,
+                child: UiHelper.CustomTextField(cotroller: searchController),
               ),
             ],
           ),
