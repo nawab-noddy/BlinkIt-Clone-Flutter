@@ -80,6 +80,40 @@ class Cartscreen extends StatelessWidget {
               ),
             ],
           ),
+          SizedBox(height: 20),
+          UiHelper.CustomImage(img: "cart.png"),
+          SizedBox(height: 20),
+          UiHelper.Customtext(
+            text: "Reordering will be easy",
+            color: Colors.black,
+            fontweight: FontWeight.bold,
+            fontsize: 16,
+            fontfamily: "bold",
+          ),
+          UiHelper.Customtext(
+            text: "Item You will order will show up here so you can buy",
+            color: Colors.black,
+            fontweight: FontWeight.bold,
+            fontsize: 12,
+          ),
+          UiHelper.Customtext(
+            text: "them again easily",
+            color: Colors.black,
+            fontweight: FontWeight.bold,
+            fontsize: 12,
+          ),
+          SizedBox(height: 30),
+          Row(
+            children: [
+              UiHelper.Customtext(
+                text: "Bestseller",
+                color: Colors.black,
+                fontweight: FontWeight.bold,
+                fontsize: 16,
+                fontfamily: "bold",
+              ),
+            ],
+          ),
         ],
       ),
     );
