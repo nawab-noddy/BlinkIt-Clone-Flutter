@@ -126,6 +126,32 @@ class Cartscreen extends StatelessWidget {
                     padding: EdgeInsets.only(top: 95, left: 65),
                     child: UiHelper.CustomButton(() {}),
                   ),
+                  UiHelper.Customtext(
+                    text: "Amul Taza Toned",
+                    color: Color(0XFF000000),
+                    fontweight: FontWeight.normal,
+                    fontsize: 8,
+                  ),
+                ],
+              ),
+              SizedBox(height: 15),
+              Stack(
+                children: [
+                  UiHelper.CustomImage(img: "potato.png"),
+                  Padding(
+                    padding: EdgeInsets.only(top: 95, left: 65),
+                    child: UiHelper.CustomButton(() {}),
+                  ),
+                ],
+              ),
+              SizedBox(height: 15),
+              Stack(
+                children: [
+                  UiHelper.CustomImage(img: "tomato.png"),
+                  Padding(
+                    padding: EdgeInsets.only(top: 95, left: 65),
+                    child: UiHelper.CustomButton(() {}),
+                  ),
                 ],
               ),
             ],
